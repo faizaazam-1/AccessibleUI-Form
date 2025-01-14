@@ -1,0 +1,195 @@
+/* CSS Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Form Container */
+.form-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Input Fields */
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1);
+}
+
+/* Password Container */
+.password-container {
+  position: relative;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.show-password-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.eye-icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+}
+
+.show-password-btn:hover .eye-icon {
+  opacity: 1;
+}
+
+/* Error Message */
+.error-message {
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+/* Update Profile Button */
+.update-profile-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.update-profile-btn:hover {
+  background-color: #333;
+}
+
+/* Progress Section */
+.progress-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.progress-container {
+  margin-bottom: 1.5rem;
+}
+
+.progress-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 8px solid #eee;
+  border-top-color: #4f46e5;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-percentage {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Checklist */
+.checklist-container {
+  background-color: #f8f8f8;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.checklist {
+  list-style: none;
+  text-align: left;
+}
+
+.checklist li {
+  padding: 0.5rem 0;
+  color: #666;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.checklist li::before {
+  content: "○";
+  position: absolute;
+  left: 0;
+  color: #999;
+}
+
+.checklist li.completed {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.checklist li.completed::before {
+  content: "●";
+  color: #4f46e5;
+}
+
+/* Focus States for Accessibility */
+input:focus,
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .form-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .progress-circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .progress-percentage {
+    font-size: 1.25rem;
+  }
+}

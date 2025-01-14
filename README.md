@@ -3,7 +3,7 @@
 An accessible form interface with profile completion tracking. This project is part of the frontend learning path from [roadmap.sh](https://roadmap.sh/frontend).
 
 ## Live Demo
-[View Demo](https://faizaazam-1.github.io/AccessibleForm/)
+[View Demo](https://faizaazam-1.github.io/AccessibleUI-Form/)
 
 ## Preview
 <img src="./assets/AccesibleUI-preview.png" alt="Accessible Form UI Preview" width="450px">
